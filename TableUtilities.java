@@ -29,7 +29,7 @@ public class TableUtilities {
 
         for(int i = 1; i <= tableSize; i++) {
             for(int j = 1; j <= tableSize; j++) {
-                table += " " + i*j + " |";
+                table += String.format("%3d |", i*j);
             } table += "\n";
         }
         return table;
